@@ -34,3 +34,9 @@ In R, navigate to the app directory and launch the Shiny app:
    shiny::runApp("survival_compare/app")
    ```
 The app should now open in your default web browser.
+
+## Some comments and thoughts
+
+1. As you might know R has a function to draw a surface and it is often helpful for 3D visualization. However, I found it not functioning well in our case, so I decided to draw discrete 3D plot and try to smooth the plane;
+2. As we discussed, different models can have a) different number of variables b) more than 3 variables, each of which leads to inconsistency in visualization. In a), when one variable is used in model A while not B, what values of this variable do we input for B? In b), what are we going to do if we are exceeding dimensions of 3? Do we want to actually go backward to 2D?
+3. As you might know, different models use different datasets, how do we account for the range of each variable being different? Do we extrapolate or do we take the intersection?
