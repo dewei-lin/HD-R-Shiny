@@ -25,7 +25,7 @@ Open R and install the necessary packages if they are not already installed:
 
  ```r
  install.packages(c("shiny", "plotly", "ggplot2"))
-
+```
 
 3. **Run the app in R**
 In R, navigate to the app directory and launch the Shiny app:
