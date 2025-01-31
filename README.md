@@ -27,9 +27,10 @@ Open R and install the necessary packages if they are not already installed:
  install.packages(c("shiny", "plotly", "ggplot2"))
 
 
-3. Run the app in R
+3. **Run the app in R**
 In R, navigate to the app directory and launch the Shiny app:
 
  ```r
  shiny::runApp("survival_compare/app")
+ ```
 The app should now open in your default web browser.
